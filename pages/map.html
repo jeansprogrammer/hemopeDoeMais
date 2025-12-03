@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemope DoeMais</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/map.css">
+
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="logo-area">
+            <a href="../index.html"><img src="../assets/img/logo/logo_caligrafia_branca.png" alt="Hemope DoeMais"
+                    class="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="pages/map.html" class="active">Mapa Interativo</a>
+            <a href="pages/ranking.html">Ranking de Doadores</a>
+            <a href="../pages/seja-doador.html">Seja um doador</a>
+        </nav>
+
+        <div class="search-area">
+            <input type="text" placeholder="Buscar cidade ou empresa" id="search-input">
+            <a id="search-btn" href=""><img src="../assets/img/icons/lupa.png" alt=""></a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <aside class="sidebar">
+            <h4>5ª GERES HEMOPE</h4>
+            <h2>Pontuação Geral</h2>
+
+            <hr>
+
+            <h3>Legenda</h3>
+            <ul class="legenda">
+                <li><span class="cor muito-alto"></span> Muito alto - 80 a 90</li>
+                <li><span class="cor alto"></span> Alto - 60 a 79,99</li>
+                <li><span class="cor medio"></span> Médio - 50 a 59,99</li>
+                <li><span class="cor baixo"></span> Baixo - 40 a 49,99</li>
+                <li><span class="cor muito-baixo"></span> Muito baixo - 0 a 39,99</li>
+                <li><span class="cor indisponivel"></span> Informação Indisponível</li>
+            </ul>
+
+            <hr>
+
+            <div class="descricao">
+                <h3>Descrição</h3>
+                <p>
+                    O mapa exibe o nível de engajamento dos municípios na doação de sangue. Cada município é
+                    representado por uma cor, indicando o volume de doações registradas pelo HEMOPE ao longo do período
+                    analisado.
+                </p>
+                <p>
+                    A pontuação é calculada com base no número total de doadores ativos, frequência das doações e
+                    participação em campanhas de incentivo. Quanto mais elevado o índice, maior o comprometimento do
+                    município com a doação de sangue.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="btn-container">
+                <button class="btn-doador">Quero ser doador</button>
+            </div>
+
+        </aside>
+
+        <section class="map-area">
+            <div id="map-div">
+                <iframe id="map" src="object/map_object.html" title="Descrição do conteúdo">
+                    Seu navegador não suporta iframes.
+                </iframe>
+            </div>
+
+            <div class="top-doadores-card">
+                <a href="ranking.html"><img src="../assets/img/top-3-doadores.png" alt=""></a>
+            </div>
+
+            <div class="map-controls">
+                <button class="ctrl-btn">+</button>
+
+                <button class="ctrl-btn">
+                    <img src="../assets/img/icons/expand.png" alt="fullscreen">
+                </button>
+
+                <button class="ctrl-btn">-</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mapa.js"></script>
+
+</body>
+
+</html>

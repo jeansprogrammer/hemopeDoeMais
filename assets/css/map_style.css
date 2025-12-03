@@ -1,0 +1,80 @@
+/* Cores fixas do mapa de calor */
+#BUIQUE { fill:#ff8a00; }
+#ITAIBA { fill:#ffd32a; }
+#AGUAS_BELAS { fill:#ffd32a; }
+#TUPANATINGA { fill:#ff8a00; }
+#PEDRA { fill:#55a630; }
+#BOM_CONSELHO { fill:#ffd32a; }
+#IATI { fill:#55a630; }
+#GARANHUNS { fill:#ffd32a; }
+#CANHOTINHO { fill:#55a630; }
+#CAETES { fill:#ff8a00; }
+#CORRENTES { fill:#ffd32a; }
+#VENTUROSA { fill:#55a630; }
+#CAPOEIRAS { fill:#ffd32a; }
+#SAO_JOAO { fill:#ffd32a; }
+#PARANATAMA { fill:#55a630; }
+#LAGOA_DO_OURO { fill:#ffd32a; }
+#JUREMA { fill:#ff8a00; }
+#LAJEDO { fill:#ffd32a; }
+#BREJAO { fill:#ffd32a; }
+#TEREZINHA { fill:#55a630; }
+#PALMERINA { fill:#ffd32a; }
+#JUPI { fill:#ff8a00; }
+#ANGELIM { fill:#ff8a00; }
+#CALCADO { fill:#ff8a00; }
+#JUCATI { fill:#ff8a00; }
+#SALOA { fill:#ff8a00; }
+
+/* Aparência no mapa */
+svg {
+    width: 100%;
+}
+
+svg path {
+    cursor:pointer;
+    transition:0.15s;
+    stroke:#fff;
+    stroke-width:6px;
+}
+
+/* POPUP */
+/* container */
+#city-popup{
+    position:absolute;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    padding:10px 18px;
+    background:#333;
+    color:#fff;
+    border-radius:30px;
+    pointer-events:none;
+    transform:translate(-50%,-110%);
+    min-width:260px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.35);
+    transition:opacity .12s ease, transform .12s ease;
+    z-index:999;
+}
+#city-popup.hidden{ opacity:0; visibility:hidden; }
+#city-popup.visible{ opacity:1; visibility:visible; }
+
+.popup-flag-wrap{
+    width:56px; height:56px;
+    border-radius:50%;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+}
+.popup-flag{ width:56px; height:56px; object-fit: cover;}
+
+.popup-name{ font-size:20px; font-weight:700; }
+.popup-score{ font-size:14px; opacity:0.9; }
+
+/* destacar o município quando o popup aparecer */
+.highlight {
+    stroke:#000 !important;
+    stroke-width:14px !important;
+}
