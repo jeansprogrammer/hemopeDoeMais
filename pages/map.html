@@ -20,7 +20,7 @@
 
         <nav class="navbar">
             <a href="pages/map.html" class="active">Mapa Interativo</a>
-            <a href="pages/ranking.html">Ranking de Doadores</a>
+            <a href="ranking.html">Ranking de Doadores</a>
             <a href="../pages/seja-doador.html">Seja um doador</a>
         </nav>
 
@@ -33,7 +33,7 @@
     <main class="container">
 
         <aside class="sidebar">
-            <h4>5ª GERES HEMOPE</h4>
+            <h4>Agreste Meridional de Pernambuco</h4>
             <h2>Pontuação Geral</h2>
 
             <hr>
@@ -67,7 +67,7 @@
             <hr>
 
             <div class="btn-container">
-                <button class="btn-doador">Quero ser doador</button>
+                <a href=""><button class="btn-doador">Quero ser doador</button></a>
             </div>
 
         </aside>
@@ -84,20 +84,18 @@
             </div>
 
             <div class="map-controls">
-                <button class="ctrl-btn">+</button>
-
-                <button class="ctrl-btn">
-                    <img src="../assets/img/icons/expand.png" alt="fullscreen">
-                </button>
-
-                <button class="ctrl-btn">-</button>
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">−</button>
+                <button id="fullscreen">⤢</button>
             </div>
+
         </section>
 
     </main>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mapa.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="../assets/js/map_script.js"></script>
 
 </body>
 

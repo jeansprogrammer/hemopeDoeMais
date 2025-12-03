@@ -27,10 +27,6 @@
 #SALOA { fill:#ff8a00; }
 
 /* Aparência no mapa */
-svg {
-    width: 100%;
-}
-
 svg path {
     cursor:pointer;
     transition:0.15s;

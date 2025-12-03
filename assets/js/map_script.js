@@ -45,7 +45,7 @@ Object.keys(cityData).forEach(id => {
     el.addEventListener("mousemove", (e) => {
         popup.style.left = e.clientX + "px";
         popup.style.top = e.clientY + "px";
-
+        
         popupName.textContent = cityData[id].nome;
         popupScore.textContent = "Pontuação: " + cityData[id].score;
 
