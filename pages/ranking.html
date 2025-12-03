@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hemope DoeMais</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/ranking.css">
+
 </head>
+
 <body>
-    
+
+    <header class="topbar">
+        <div class="logo-area">
+            <a href="../index.html"><img src="../assets/img/logo/logo_caligrafia_branca.png" alt="Hemope DoeMais"
+                    class="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="map.html">Mapa Interativo</a>
+            <a href="ranking.html" class="active">Ranking de Doadores</a>
+            <a href="donor.html">Seja um doador</a>
+        </nav>
+
+        <div class="search-area">
+            <input type="text" placeholder="Buscar cidade ou empresa" id="search-input">
+            <a id="search-btn" href=""><img src="../assets/img/icons/lupa.png" alt=""></a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <aside class="sidebar">
+            <div class="podium-container">
+
+                <!-- 2º LUGAR -->
+                <div class="podium-item second">
+                    <img src="../assets/img/menina.png" class="podium-photo">
+                    <h3 class="podium-name">Maria Eduarda</h3>
+
+                    <img src="../assets/img/2lugar.png" alt="">
+
+                    <div class="podium-info">
+                        <p><strong>Pontuação:</strong> 540</p>
+                        <p><strong>Doações:</strong> 12</p>
+                        <p><strong>Última doação:</strong> 10/02/2025</p>
+                    </div>
+                </div>
+
+                <!-- 1º LUGAR -->
+                <div class="podium-item first">
+                    <img src="../assets/img/homem.png" class="podium-photo">
+                    <h3 class="podium-name">João Silva</h3>
+
+                    <img src="../assets/img/1lugar.png" alt="">
+
+                    <div class="podium-info">
+                        <p><strong>Pontuação:</strong> 680</p>
+                        <p><strong>Doações:</strong> 18</p>
+                        <p><strong>Última doação:</strong> 01/02/2025</p>
+                    </div>
+                </div>
+
+                <!-- 3º LUGAR -->
+                <div class="podium-item third">
+                    <img src="../assets/img/menina.png" class="podium-photo">
+                    <h3 class="podium-name">Ana Beatriz</h3>
+
+                    <img src="../assets/img/3lugar.png" alt="">
+
+                    <div class="podium-info">
+                        <p><strong>Pontuação:</strong> 500</p>
+                        <p><strong>Doações:</strong> 10</p>
+                        <p><strong>Última doação:</strong> 14/02/2025</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn-container">
+                <a href="donor.html"><button class="btn-doador">Quero ser doador</button></a>
+            </div>
+
+        </aside>
+
+        <section class="list-area">
+            <div class="ranking-list">
+
+    <h2 class="ranking-title">Top 10 Doadores</h2>
+
+    <ul class="ranking-items">
+
+        <li class="ranking-item">
+            <span class="rank-position">1º</span>
+            <span class="rank-name">Carlos Henrique</span>
+            <span class="rank-score">480 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">2º</span>
+            <span class="rank-name">Carlos Henrique</span>
+            <span class="rank-score">480 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">3º</span>
+            <span class="rank-name">Carlos Henrique</span>
+            <span class="rank-score">480 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">4º</span>
+            <span class="rank-name">Carlos Henrique</span>
+            <span class="rank-score">480 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">5º</span>
+            <span class="rank-name">Fernanda Souza</span>
+            <span class="rank-score">450 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">6º</span>
+            <span class="rank-name">Pedro Lima</span>
+            <span class="rank-score">430 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">7º</span>
+            <span class="rank-name">Juliana Alves</span>
+            <span class="rank-score">402 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">8º</span>
+            <span class="rank-name">Marcos Paulo</span>
+            <span class="rank-score">380 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">9º</span>
+            <span class="rank-name">Bruno César</span>
+            <span class="rank-score">360 pts</span>
+        </li>
+
+        <li class="ranking-item">
+            <span class="rank-position">10º</span>
+            <span class="rank-name">Priscila Rocha</span>
+            <span class="rank-score">345 pts</span>
+        </li>
+
+    </ul>
+</div>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
