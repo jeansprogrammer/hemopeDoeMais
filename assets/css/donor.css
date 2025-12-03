@@ -1,0 +1,131 @@
+/* PÓDIO ESQUERDA*/
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sidebar {
+    width:40%;
+    background: #fff;
+    padding: 20px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+}
+
+/* --- LADO ESQUERDO --- */
+.left-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #e0e0e0;
+}
+
+.banner {
+    background: url('../img/hemope_doacao.png') center/cover no-repeat;
+    height: 60%;
+    position: relative;
+}
+
+.info-box {
+    padding: 40px;
+    text-align: center;
+}
+
+.info-box p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hemope-space {
+    width: 850px;
+    height: 50px;
+}
+
+.hemope-button {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.hemope-logo img {
+    height: 60px;
+    width: auto;
+    padding-top: 10px;
+}
+
+
+/* --- LADO DIREITO --- */
+.right-content {
+    width: 40%;
+    background: #fff;
+    padding: 40px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.btn-enviar {
+    width: 120px;
+    padding: 10px 0;
+    margin-top: 10px;
+    background: #c62828;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #a21919;
+}
+
+.map-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 270px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 900px) {
+    .page-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+    }
+}
