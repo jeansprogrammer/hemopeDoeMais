@@ -49,10 +49,6 @@
     transition: 0.2s ease-in-out;
 }
 
-.btn-container .btn-doador:hover {
-    background: #a21919;
-}
-
 .podium-container {
     display: flex;
     justify-content: center;
@@ -150,11 +146,6 @@
     background: #fff;
     margin-bottom: 6px;
     border: 1px solid #ececec;
-}
-
-.ranking-item:hover {
-    background: #ffe2cc;
-    border-color: #ff8a00;
 }
 
 .rank-position {

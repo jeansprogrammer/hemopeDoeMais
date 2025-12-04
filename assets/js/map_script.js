@@ -173,6 +173,36 @@ Object.keys(cityData).forEach(id => {
 
     // Clique -> abre página da cidade
     el.addEventListener("click", () => {
-        window.location.href = `cidade.html?cidade=${id}`;
+        window.location.href = `../city.html?cidade=${id}`;
     });
+});
+
+// Selecionar o SVG
+const svg = document.querySelector("#mapa_svg");
+
+// Controle de zoom
+let zoomLevel = 1;
+
+// Aplica escala ao SVG
+function applyZoom() {
+    svg.style.transform = `scale(${zoomLevel})`;
+    svg.style.transformOrigin = "center center";
+}
+
+// BOTÃO ZOOM IN
+document.getElementById("zoom-in").addEventListener("click", () => {
+    zoomLevel += 0.1;
+    applyZoom();
+});
+
+// BOTÃO ZOOM OUT
+document.getElementById("zoom-out").addEventListener("click", () => {
+    zoomLevel = Math.max(0.3, zoomLevel - 0.1); // mínimo 0.3
+    applyZoom();
+});
+
+// BOTÃO RESET
+document.getElementById("zoom-reset").addEventListener("click", () => {
+    zoomLevel = 1;
+    applyZoom();
 });
