@@ -34,6 +34,10 @@ svg path {
     stroke-width:6px;
 }
 
+#mapa_svg {
+    width: 90%;
+}
+
 /* POPUP */
 /* container */
 #city-popup{

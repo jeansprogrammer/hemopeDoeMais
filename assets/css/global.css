@@ -11,6 +11,16 @@ body {
 
 a { text-decoration: none; color: #000; }
 
+#search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#search-btn img {
+    width: 20px;
+}
+
+
 .topbar {
     background: #c62828;
     color: white;
@@ -23,13 +33,18 @@ a { text-decoration: none; color: #000; }
 .logo { height: 40px; }
 
 .navbar a {
-    margin: 0 30px;
-    color: white;
+    margin: 0px 30px;
+    color: rgb(230, 228, 228);
     font-weight: 600;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 .navbar a.active {
     border-bottom: 2px solid #fff;
+    color: white;
 }
 
 .search-area {

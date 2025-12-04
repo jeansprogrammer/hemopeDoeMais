@@ -16,7 +16,7 @@
     margin-top: 10px;
 }
 
-.legenda .cor {
+.cor {
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -102,6 +102,7 @@
     text-decoration: none;
     font-weight: 600;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .btn-container .btn-doador:hover {
@@ -113,4 +114,41 @@ li {
     display: flex;
     align-items: center;
     font-size: 14px;
+}
+
+.city-info {
+    text-align: center;
+}
+
+.city-flag {
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botão X */
+.back-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+table {
+    width: 55%;
+    margin: 0 auto;
+}
+
+table tr td {
+    text-align: start;
 }

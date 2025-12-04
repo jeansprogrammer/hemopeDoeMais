@@ -1,135 +1,135 @@
 // Pontuações fictícias por cidade
 const cityData = {
     "BUIQUE": {
-    nome: "Buíque",
-    score: 60.44,
-    img: "../../assets/img/cities_flags/popup_flags/BUIQUE.png"
-},
-"ITAIBA": {
-    nome: "Itaíba",
-    score: 55.21,
-    img: "../../assets/img/cities_flags/popup_flags/ITAIBA.png"
-},
-"AGUAS_BELAS": {
-    nome: "Águas Belas",
-    score: 58.90,
-    img: "../../assets/img/cities_flags/popup_flags/AGUAS_BELAS.png"
-},
-"TUPANATINGA": {
-    nome: "Tupanatinga",
-    score: 63.70,
-    img: "../../assets/img/cities_flags/popup_flags/TUPANATINGA.png"
-},
-"PEDRA": {
-    nome: "Pedra",
-    score: 49.87,
-    img: "../../assets/img/cities_flags/popup_flags/PEDRA.png"
-},
-"BOM_CONSELHO": {
-    nome: "Bom Conselho",
-    score: 52.30,
-    img: "../../assets/img/cities_flags/popup_flags/BOM_CONSELHO.png"
-},
-"IATI": {
-    nome: "Iati",
-    score: 41.22,
-    img: "../../assets/img/cities_flags/popup_flags/IATI.png"
-},
-"GARANHUNS": {
-    nome: "Garanhuns",
-    score: 65.76,
-    img: "../../assets/img/cities_flags/popup_flags/GARANHUNS.png"
-},
-"CANHOTINHO": {
-    nome: "Canhotinho",
-    score: 59.45,
-    img: "../../assets/img/cities_flags/popup_flags/CANHOTINHO.png"
-},
-"CAETES": {
-    nome: "Caetés",
-    score: 51.90,
-    img: "../../assets/img/cities_flags/popup_flags/CAETES.png"
-},
-"CORRENTES": {
-    nome: "Correntes",
-    score: 47.88,
-    img: "../../assets/img/cities_flags/popup_flags/CORRENTES.png"
-},
-"VENTUROSA": {
-    nome: "Venturosa",
-    score: 54.12,
-    img: "../../assets/img/cities_flags/popup_flags/VENTUROSA.png"
-},
-"CAPOEIRAS": {
-    nome: "Capoeiras",
-    score: 82.33,
-    img: "../../assets/img/cities_flags/popup_flags/CAPOEIRAS.png"
-},
-"SAO_JOAO": {
-    nome: "São João",
-    score: 81.30,
-    img: "../../assets/img/cities_flags/popup_flags/SAO_JOAO.png"
-},
-"PARANATAMA": {
-    nome: "Paranatama",
-    score: 54.90,
-    img: "../../assets/img/cities_flags/popup_flags/PARANATAMA.png"
-},
-"LAGOA_DO_OURO": {
-    nome: "Lagoa do Ouro",
-    score: 55.80,
-    img: "../../assets/img/cities_flags/popup_flags/LAGOA_DO_OURO.png"
-},
-"JUREMA": {
-    nome: "Jurema",
-    score: 48.33,
-    img: "../../assets/img/cities_flags/popup_flags/JUREMA.png"
-},
-"LAJEDO": {
-    nome: "Lajedo",
-    score: 58.12,
-    img: "../../assets/img/cities_flags/popup_flags/LAJEDO.png"
-},
-"BREJAO": {
-    nome: "Brejão",
-    score: 49.22,
-    img: "../../assets/img/cities_flags/popup_flags/BREJAO.png"
-},
-"TEREZINHA": {
-    nome: "Terezinha",
-    score: 76.44,
-    img: "../../assets/img/cities_flags/popup_flags/TEREZINHA.png"
-},
-"PALMERINA": {
-    nome: "Palmerina",
-    score: 53.20,
-    img: "../../assets/img/cities_flags/popup_flags/PALMERINA.png"
-},
-"JUPI": {
-    nome: "Jupi",
-    score: 50.40,
-    img: "../../assets/img/cities_flags/popup_flags/JUPI.png"
-},
-"ANGELIM": {
-    nome: "Angelim",
-    score: 42.99,
-    img: "../../assets/img/cities_flags/popup_flags/ANGELIM.png"
-},
-"CALCADO": {
-    nome: "Calçado",
-    score: 57.10,
-    img: "../../assets/img/cities_flags/popup_flags/CALCADO.png"
-},
-"JUCATI": {
-    nome: "Jucati",
-    score: 77.21,
-    img: "../../assets/img/cities_flags/popup_flags/JUCATI.png"
-},
-"SALOA": {
-    nome: "Saloá",
-    score: 70.21,
-    img: "../../assets/img/cities_flags/popup_flags/SALOA.png"
-}
+        nome: "Buíque",
+        score: 60.44,
+        img: "../../assets/img/cities_flags/BUIQUE.png"
+    },
+    "ITAIBA": {
+        nome: "Itaíba",
+        score: 55.21,
+        img: "../../assets/img/cities_flags/ITAIBA.png"
+    },
+    "AGUAS_BELAS": {
+        nome: "Águas Belas",
+        score: 58.90,
+        img: "../../assets/img/cities_flags/AGUAS_BELAS.png"
+    },
+    "TUPANATINGA": {
+        nome: "Tupanatinga",
+        score: 63.70,
+        img: "../../assets/img/cities_flags/TUPANATINGA.png"
+    },
+    "PEDRA": {
+        nome: "Pedra",
+        score: 49.87,
+        img: "../../assets/img/cities_flags/PEDRA.png"
+    },
+    "BOM_CONSELHO": {
+        nome: "Bom Conselho",
+        score: 52.30,
+        img: "../../assets/img/cities_flags/BOM_CONSELHO.png"
+    },
+    "IATI": {
+        nome: "Iati",
+        score: 41.22,
+        img: "../../assets/img/cities_flags/IATI.png"
+    },
+    "GARANHUNS": {
+        nome: "Garanhuns",
+        score: 65.76,
+        img: "../../assets/img/cities_flags/GARANHUNS.png"
+    },
+    "CANHOTINHO": {
+        nome: "Canhotinho",
+        score: 59.45,
+        img: "../../assets/img/cities_flags/CANHOTINHO.png"
+    },
+    "CAETES": {
+        nome: "Caetés",
+        score: 51.90,
+        img: "../../assets/img/cities_flags/CAETES.png"
+    },
+    "CORRENTES": {
+        nome: "Correntes",
+        score: 47.88,
+        img: "../../assets/img/cities_flags/CORRENTES.png"
+    },
+    "VENTUROSA": {
+        nome: "Venturosa",
+        score: 54.12,
+        img: "../../assets/img/cities_flags/VENTUROSA.png"
+    },
+    "CAPOEIRAS": {
+        nome: "Capoeiras",
+        score: 82.33,
+        img: "../../assets/img/cities_flags/CAPOEIRAS.png"
+    },
+    "SAO_JOAO": {
+        nome: "São João",
+        score: 81.30,
+        img: "../../assets/img/cities_flags/SAO_JOAO.png"
+    },
+    "PARANATAMA": {
+        nome: "Paranatama",
+        score: 54.90,
+        img: "../../assets/img/cities_flags/PARANATAMA.png"
+    },
+    "LAGOA_DO_OURO": {
+        nome: "Lagoa do Ouro",
+        score: 55.80,
+        img: "../../assets/img/cities_flags/LAGOA_DO_OURO.png"
+    },
+    "JUREMA": {
+        nome: "Jurema",
+        score: 48.33,
+        img: "../../assets/img/cities_flags/JUREMA.png"
+    },
+    "LAJEDO": {
+        nome: "Lajedo",
+        score: 58.12,
+        img: "../../assets/img/cities_flags/LAJEDO.png"
+    },
+    "BREJAO": {
+        nome: "Brejão",
+        score: 49.22,
+        img: "../../assets/img/cities_flags/BREJAO.png"
+    },
+    "TEREZINHA": {
+        nome: "Terezinha",
+        score: 76.44,
+        img: "../../assets/img/cities_flags/TEREZINHA.png"
+    },
+    "PALMERINA": {
+        nome: "Palmerina",
+        score: 53.20,
+        img: "../../assets/img/cities_flags/PALMERINA.png"
+    },
+    "JUPI": {
+        nome: "Jupi",
+        score: 50.40,
+        img: "../../assets/img/cities_flags/JUPI.png"
+    },
+    "ANGELIM": {
+        nome: "Angelim",
+        score: 42.99,
+        img: "../../assets/img/cities_flags/ANGELIM.png"
+    },
+    "CALCADO": {
+        nome: "Calçado",
+        score: 57.10,
+        img: "../../assets/img/cities_flags/CALCADO.png"
+    },
+    "JUCATI": {
+        nome: "Jucati",
+        score: 77.21,
+        img: "../../assets/img/cities_flags/JUCATI.png"
+    },
+    "SALOA": {
+        nome: "Saloá",
+        score: 70.21,
+        img: "../../assets/img/cities_flags/SALOA.png"
+    }
 
 };
 
@@ -150,7 +150,7 @@ Object.keys(cityData).forEach(id => {
     el.addEventListener("mousemove", (e) => {
         popup.style.left = e.clientX + "px";
         popup.style.top = e.clientY + "px";
-        
+
         popupName.textContent = cityData[id].nome;
         popupScore.textContent = "Pontuação: " + cityData[id].score;
 
@@ -171,38 +171,35 @@ Object.keys(cityData).forEach(id => {
         el.classList.remove("highlight");
     });
 
-    // Clique -> abre página da cidade
+    // Clique -> envia dados para a página principal
     el.addEventListener("click", () => {
-        window.location.href = `../city.html?cidade=${id}`;
+        window.parent.postMessage({
+            action: "updateCitySidebar",
+            city: cityData[id]
+        }, "*");
     });
-});
 
-// Selecionar o SVG
-const svg = document.querySelector("#mapa_svg");
-
-// Controle de zoom
+    const svg = document.querySelector("#mapa_svg");
 let zoomLevel = 1;
 
-// Aplica escala ao SVG
 function applyZoom() {
     svg.style.transform = `scale(${zoomLevel})`;
     svg.style.transformOrigin = "center center";
 }
 
-// BOTÃO ZOOM IN
 document.getElementById("zoom-in").addEventListener("click", () => {
     zoomLevel += 0.1;
     applyZoom();
 });
 
-// BOTÃO ZOOM OUT
 document.getElementById("zoom-out").addEventListener("click", () => {
-    zoomLevel = Math.max(0.3, zoomLevel - 0.1); // mínimo 0.3
+    zoomLevel = Math.max(0.3, zoomLevel - 0.1);
     applyZoom();
 });
 
-// BOTÃO RESET
 document.getElementById("zoom-reset").addEventListener("click", () => {
     zoomLevel = 1;
     applyZoom();
+});
+
 });

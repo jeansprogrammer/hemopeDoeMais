@@ -26,7 +26,7 @@
 
         <div class="search-area">
             <input type="text" placeholder="Buscar cidade" id="search-input">
-            <a id="search-btn" href=""><img src="../assets/img/icons/lupa.png" alt=""></a>
+            <button id="search-btn"><img src="../assets/img/icons/lupa.png"></button>
         </div>
     </header>
 
@@ -90,6 +90,93 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/map.js"></script>
     <script src="../assets/js/map_script.js"></script>
+
+    <script>
+        // Salvar conteúdo inicial do sidebar
+        let sidebarOriginal = null;
+    </script>
+
+
+    <script>
+        window.addEventListener("message", (event) => {
+            if (event.data.action === "updateCitySidebar") {
+                const city = event.data.city;
+
+                // Se ainda não salvou o sidebar original, salvar agora
+                if (!sidebarOriginal) {
+                    sidebarOriginal = document.querySelector(".sidebar").innerHTML;
+                }
+
+                // Substitui conteúdo do sidebar
+                document.querySelector(".sidebar").innerHTML = `
+            <div class="sidebar-title">
+                <div class="sidebar-text">
+                    <h4>Agreste Meridional de Pernambuco</h4>
+                    <h2>Pontuação Geral</h2>
+                </div>
+                <button id="sidebar-back" class="back-btn">X</button>
+            </div>
+
+            <hr>
+            
+            <div class="city-info">
+                <img src="${city.img}" class="city-flag" alt="${city.nome}">
+                <h2>${city.nome}</h2>
+                
+                <p><strong>Pontuação:</strong> ${city.score}</p>
+                <p><strong>Classificação:</strong> ${city.score >= 80 ? "Muito alto" :
+                        city.score >= 60 ? "Alto" :
+                            city.score >= 50 ? "Médio" :
+                                city.score >= 40 ? "Baixo" : "Muito Baixo"
+                    }</p>
+
+                <hr>
+
+                <h3>Indicadores de Engajamento</h3>
+                <p><strong>Número de Doadores Ativos:</strong> ${city.doacoes ?? "—"}</p>
+                <p><strong>Doações Realizadas no Ano:</strong> ${city.ultimaDoacao ?? "—"}</p>
+                <hr>
+
+                <h3>Políticas Públicas Ativadas</h3>
+                <p>Com certificação automática.</p>
+                <table>
+                    <tr>
+                        <td><span class="cor alto"></span></td>
+                        <td><strong><p> ${city.politicaAtiva ?? "—"} políticas ativas</strong></p></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cor medio"></span></td>
+                        <td><strong><p> ${city.politicaAtiva ?? "—"} políticas em análise</strong></p></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cor indisponivel"></span></td>
+                        <td><strong><p> ${city.politicaAtiva ?? "—"} políticas pendentes</strong></p></td>
+                    </tr>                
+                </table>
+
+                <hr>
+
+                <h3>Empresas Parceiras da Cidade</h3>
+                <p><strong>Empresas certificadas:</strong> ${city.doacoes ?? "—"}</p>
+                <p><strong>Certificados emitidos:</strong> ${city.doacoes ?? "—"}</p>
+                <p><strong>Campanhas empresariais no ano:</strong> ${city.doacoes ?? "—"}</p>
+                
+                <hr>
+
+                <div class="btn-container">
+                <a href="donor.html"><button class="btn-doador">Quero ser doador</button></a>
+            </div>
+
+            </div>
+        `;
+
+                // Botão de voltar restaura sem reload
+                document.getElementById("sidebar-back").addEventListener("click", () => {
+                    document.querySelector(".sidebar").innerHTML = sidebarOriginal;
+                });
+            }
+        });
+    </script>
 
 </body>
 
