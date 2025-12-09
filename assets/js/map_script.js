@@ -1,10 +1,10 @@
 // Pontuações fictícias por cidade
 const cityData = {
-    "BUIQUE": {
+    /*"BUIQUE": {
         nome: "Buíque",
         score: 60.44,
         img: "../../assets/img/cities_flags/BUIQUE.png"
-    },
+    },*/
     "ITAIBA": {
         nome: "Itaíba",
         score: 55.21,
@@ -15,16 +15,16 @@ const cityData = {
         score: 58.90,
         img: "../../assets/img/cities_flags/AGUAS_BELAS.png"
     },
-    "TUPANATINGA": {
+    /*"TUPANATINGA": {
         nome: "Tupanatinga",
         score: 63.70,
         img: "../../assets/img/cities_flags/TUPANATINGA.png"
-    },
-    "PEDRA": {
+    },*/
+    /*"PEDRA": {
         nome: "Pedra",
         score: 49.87,
         img: "../../assets/img/cities_flags/PEDRA.png"
-    },
+    },*/
     "BOM_CONSELHO": {
         nome: "Bom Conselho",
         score: 52.30,
@@ -55,11 +55,11 @@ const cityData = {
         score: 47.88,
         img: "../../assets/img/cities_flags/CORRENTES.png"
     },
-    "VENTUROSA": {
+    /*"VENTUROSA": {
         nome: "Venturosa",
         score: 54.12,
         img: "../../assets/img/cities_flags/VENTUROSA.png"
-    },
+    },*/
     "CAPOEIRAS": {
         nome: "Capoeiras",
         score: 82.33,
@@ -80,11 +80,11 @@ const cityData = {
         score: 55.80,
         img: "../../assets/img/cities_flags/LAGOA_DO_OURO.png"
     },
-    "JUREMA": {
+    /*"JUREMA": {
         nome: "Jurema",
         score: 48.33,
         img: "../../assets/img/cities_flags/JUREMA.png"
-    },
+    },*/
     "LAJEDO": {
         nome: "Lajedo",
         score: 58.12,
